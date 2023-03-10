@@ -19,13 +19,13 @@ Após, basta abrir o navegador e acessar a seguinte url: <http://localhost:8080/
 
 
 #### Página inicial:
-![Tela inicial](https://github.com/FelipeBZanardo/Projeto-final-Web-I/blob/master/projeto-web-i%20-%20thymeleaf/src/main/resources/static/tela_home.png)
+![Tela inicial](https://github.com/FelipeBZanardo/Projeto-final-Web-I/blob/master/projeto-web-i/src/main/resources/static/tela_home.png)
           
 #### Página "Cadastrar Time":
-![Tela Cadastrar](https://github.com/FelipeBZanardo/Projeto-final-Web-I/blob/master/projeto-web-i%20-%20thymeleaf/src/main/resources/static/tela_cadastrar.png)
+![Tela Cadastrar](https://github.com/FelipeBZanardo/Projeto-final-Web-I/blob/master/projeto-web-i/src/main/resources/static/tela_cadastrar.png)
           
 #### Página "Listar Times":
-![Alt ou título da imagem](https://github.com/FelipeBZanardo/Projeto-final-Web-I/blob/master/projeto-web-i%20-%20thymeleaf/src/main/resources/static/tela_listar.png)
+![Alt ou título da imagem](https://github.com/FelipeBZanardo/Projeto-final-Web-I/blob/master/projeto-web-i/src/main/resources/static/tela_listar.png)
          
 
 ## 📋 Dependências Spring Boot

@@ -62,7 +62,7 @@ Após, basta abrir o navegador e acessar a seguinte url: <http://localhost:8080/
 
 ## ⚙️ Executando as requisições HTTP
 
- * Fazer o download da pasta Insomnia
+ * Fazer o download da pasta [Insomnia](https://github.com/FelipeBZanardo/Projeto-final-Web-I/tree/master/Insomnia)
  * Abrir no aplicativo
  * Fazer os testes das Requisições HTTP da aplicação Rest 
 

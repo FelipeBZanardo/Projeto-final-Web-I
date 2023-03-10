@@ -9,7 +9,7 @@
     <div th:include="navbar"></div>
 </head>
 <body>
-<div class="flex-box flex-column justify-content-center">
+<div class="flex-box flex-column justify-content-center my-auto">
   <form class="input-group w-25 p-3" th:action="@{/times/nome}" method="get" >
     <input type="text" class="form-control rounded" placeholder="Pesquisar por parte do Nome" name="nome"/>
     <button type="submit" class="btn btn-success">Pesquisar</button>
@@ -59,6 +59,7 @@
     <div th:if="${isEmpty}" th:text="${mensagem}" class="alert alert-danger" role="alert"/>
   </div>
 </div>
+<div style="min-height: 100px; padding: 50px; margin-bottom: 50px;"></div>
 </body>
 <footer th:include="footer"></footer>
 </html>

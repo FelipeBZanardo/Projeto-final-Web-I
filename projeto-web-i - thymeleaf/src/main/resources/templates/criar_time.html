@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${cadastrar} ? 'Criar Time' : 'Editar Time'"></title>
+    <div th:include="navbar"></div>
+</head>
+<body>
+<form th:object="${time}" th:action="@{${cadastrar ? '/times/save' : '/times/edit'}}" method="post" class="w-50 p-3">
+    <input type="hidden" th:object="${time}">
+    <input th:if="${!cadastrar}" type="hidden" name="id" th:value="${time.id}">
+  <div class="form-group p-2">
+    <label for="nome">Nome do Time:</label>
+    <input type="text" class="form-control" id="nome" name="nome" th:field="*{nome}">
+    <small th:if="${campoVazio}" th:classappend="${#strings.isEmpty(time.nome)} ? 'form-text text-danger' : 'd-none'">Não deixe em branco.</small>
+  </div>
+  <div class="form-group p-2">
+    <label for="pais">País:</label>
+    <input type="text" class="form-control" id="pais" name="pais" th:field="*{pais}">
+    <small th:if="${campoVazio}" th:classappend="${#strings.isEmpty(time.pais)} ? 'form-text text-danger' : 'd-none'">Não deixe em branco.</small>
+  </div>
+  <div class="form-group p-2">
+    <label for="fundacao">Data de fundação:</label>
+    <input th:type="${cadastrar} ? 'date' : 'text'" placeholder="dd/mm/aaaa" class="form-control" id="fundacao" name="fundacao" th:field="*{fundacao}"/>
+    <small th:if="${campoVazio}" th:classappend="${#strings.isEmpty(time.fundacao)} ? 'form-text text-danger' : 'd-none'">Não deixe em branco.</small>
+  </div>
+  <div class="form-group p-2">
+    <label for="quantidadeTitulos">Quantidade de títulos:</label>
+    <input type="number" class="form-control" id="quantidadeTitulos" name="quantidadeTitulos" th:field="*{quantidadeTitulos}"/>
+    <small th:if="${campoVazio}" th:classappend="${#strings.isEmpty(time.quantidadeTitulos)} ? 'form-text text-danger' : 'd-none'">Não deixe em branco.</small>
+  </div>
+    <button th:text="${cadastrar} ? 'Criar' : 'Editar'" type="submit" class="btn btn-success"/>
+  </div>
+</form>
+</body>
+<footer th:include="footer"></footer>
+</html>

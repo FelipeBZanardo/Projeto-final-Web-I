@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <div th:include="navbar"></div>
+</head>
+<body>
+<main role="main">
+    <!-- Principal jumbotron, para a principal mensagem de marketing ou call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Bem Vindos!</h1>
+            <p>Esta é minha primeira aplicação de CRUD utilizando os conceitos de Spring Web, Spring Data JPA, Thymeleaf, Bootstrap e Banco em memória H2.
+            <br>
+            Esse projeto faz parte do módulo WEB I do curso Santander Coders 2022 ministrado pelo professor Alan Santos.</p>
+            <p><a class="btn btn-success btn-lg" href="#" role="button">Saiba mais &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Exemplo de linha de colunas -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Sobre o Autor</h2>
+                <p>Felipe Zanardo, formado com honras em Engenharia Elétrica pela FEI. Atualmente se aventurando no mundo da programação
+                e buscando primeira oportunidade na área.
+                <br>
+                Apaixonado por esportes, principalmente futebol, tema do projeto Web.</p>
+                <p><a class="btn btn-success" href="https://www.linkedin.com/in/felipe-bueno-zanardo" role="button">Saber mais &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Cadastrar Times</h2>
+                <p>A parte de cadastro há campos <strong>obrigatórios</strong> que devem ser preenchidos pelo usário.
+                    Esses campos são o Nome do time, seu País, a data de Fundação e a quantidade de Títulos até o momento.
+                    <br>
+                    Os dados e estatísticas podem ser encontrados em <a href="https://www.ogol.com.br/home.php">Ogol</a>
+                    buscando pelo nome do time e clicando em Estatísticas.
+                </p>
+                <p><a class="btn btn-success" href="/times/control/0" role="button">Ver detalhes &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Listar Times</h2>
+                <p>A parte de listar os times é uma tabela com todas as informações cadastradas.
+                    <br>
+                    Além disso há opções de editar e remover um Time, pesquisar utilizando parte do Nome e
+                    ordernar a lista pela data de Fundação, Nome do time e a Quantidade de Títulos.
+                </p>
+                <p><a class="btn btn-success" href="/times/all" role="button">Ver detalhes &raquo;</a></p>
+            </div>
+        </div>
+
+        <hr>
+
+    </div> <!-- /container -->
+
+</main>
+</body>
+<footer th:include="footer"></footer>
+</html>

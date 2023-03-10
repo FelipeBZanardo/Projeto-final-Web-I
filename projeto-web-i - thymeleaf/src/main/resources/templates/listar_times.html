@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Listar Times</title>
+    <div th:include="navbar"></div>
+</head>
+<body>
+<div class="flex-box flex-column justify-content-center">
+  <form class="input-group w-25 p-3" th:action="@{/times/nome}" method="get" >
+    <input type="text" class="form-control rounded" placeholder="Pesquisar por parte do Nome" name="nome"/>
+    <button type="submit" class="btn btn-success">Pesquisar</button>
+  </form>
+  <div class="d-flex flex-row justify-content-center">
+    <form class="input-group w-25 p-3" th:action="@{/times/orderByNome}" method="get" >
+      <button type="submit" class="btn btn-success">Ordenar por Nome</button>
+    </form>
+    <form class="input-group w-25 p-3" th:action="@{/times/orderByFundacao}" method="get" >
+      <button type="submit" class="btn btn-success">Ordenar pela Data de Fundação</button>
+    </form>
+    <form class="input-group w-25 p-3" th:action="@{/times/orderByTitulos}" method="get" >
+      <button type="submit" class="btn btn-success">Ordenar por Quantidade Títulos</button>
+    </form>
+  </div>
+  <div>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">País</th>
+        <th scope="col">Data Fundação</th>
+        <th scope="col">Quantidade de Títulos</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:if="${!isEmpty}" th:each="time : ${times}">
+        <td th:text="${time.id}"></td>
+        <td th:text="${time.nome}"></td>
+        <td th:text="${time.pais}"></td>
+        <td th:text="${{time.fundacao}}"></td>
+        <td th:text="${{time.quantidadeTitulos}}"></td>
+        <td>
+          <form th:action="@{/times/control/{id}(id=${time.id})}" th:method="get">
+            <button type="submit" class="btn btn-primary edit">Editar</button>
+          </form>
+        </td>
+        <td>
+          <form th:action="@{/times/delete/{id}(id=${time.id})}" th:method="delete">
+            <button type="submit" class="btn btn-danger delete">Remover</button>
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <div th:if="${isEmpty}" th:text="${mensagem}" class="alert alert-danger" role="alert"/>
+  </div>
+</div>
+</body>
+<footer th:include="footer"></footer>
+</html>

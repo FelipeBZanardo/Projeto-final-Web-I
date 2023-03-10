@@ -1,0 +1,587 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v2023.1.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2023-03-10T21:49:16.764Z",
+				"time": 5.734999999999999,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/rest/times/save",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "\n{\n\t\"nome\": \"Corinthians\",\n\t\"pais\": \"Brasil\",\n\t\"fundacao\": \"1910-09-01\",\n\t\"quantidadeTitulos\": 57\n}\n\n/*{\n\t\"nome\": \"Grêmio\",\n\t\"pais\": \"Brasil\",\n\t\"fundacao\": \"1903-09-15\",\n\t\"quantidadeTitulos\": 62\n}\n\n{\n\t\"nome\": \"Chelsea\",\n\t\"pais\": \"Inglaterra\",\n\t\"fundacao\": \"1905-03-10\",\n\t\"quantidadeTitulos\": 36\n}\n\n{\n\t\"nome\": \"Real Madrid\",\n\t\"pais\": \"Espanha\",\n\t\"fundacao\": \"1902-03-06\",\n\t\"quantidadeTitulos\": 120\n}\n\n{\n\t\"nome\": \"Boca Juniors\",\n\t\"pais\": \"Argentina\",\n\t\"fundacao\": \"1905-04-03\",\n\t\"quantidadeTitulos\": 60\n}*/\n\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 10 Mar 2023 21:46:14 GMT"
+						}
+					],
+					"content": {
+						"size": 92,
+						"mimeType": "application/json",
+						"text": "{\"id\":9,\"nome\":\"Corinthians\",\"pais\":\"Brasil\",\"fundacao\":\"1910-09-01\",\"quantidadeTitulos\":57}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.734999999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Criar Time"
+			},
+			{
+				"startedDateTime": "2023-03-10T21:49:16.764Z",
+				"time": 5.5649999999999995,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/rest/times/all",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 10 Mar 2023 21:46:42 GMT"
+						}
+					],
+					"content": {
+						"size": 377,
+						"mimeType": "application/json",
+						"text": "[{\"id\":3,\"nome\":\"Corinthians\",\"pais\":\"Inglaterra\",\"fundacao\":\"1900-01-01\",\"quantidadeTitulos\":10},{\"id\":4,\"nome\":\"Grêmio\",\"pais\":\"Brasil\",\"fundacao\":\"1903-09-15\",\"quantidadeTitulos\":62},{\"id\":5,\"nome\":\"Chelsea\",\"pais\":\"Inglaterra\",\"fundacao\":\"1905-03-10\",\"quantidadeTitulos\":36},{\"id\":7,\"nome\":\"Boca Juniors\",\"pais\":\"Argentina\",\"fundacao\":\"1905-04-03\",\"quantidadeTitulos\":60}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.5649999999999995,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Todos os Times"
+			},
+			{
+				"startedDateTime": "2023-03-10T21:49:16.764Z",
+				"time": 28.958000000000002,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/rest/times/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 10 Mar 2023 21:37:41 GMT"
+						}
+					],
+					"content": {
+						"size": 94,
+						"mimeType": "application/json",
+						"text": "{\"id\":1,\"nome\":\"Real Madrid\",\"pais\":\"Espanha\",\"fundacao\":\"1902-03-06\",\"quantidadeTitulos\":120}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 28.958000000000002,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Time pelo Id"
+			},
+			{
+				"startedDateTime": "2023-03-10T21:49:16.764Z",
+				"time": 5.647,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/rest/times/nome/cor",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 10 Mar 2023 21:42:43 GMT"
+						}
+					],
+					"content": {
+						"size": 94,
+						"mimeType": "application/json",
+						"text": "[{\"id\":3,\"nome\":\"Corinthians\",\"pais\":\"Brasil\",\"fundacao\":\"1910-09-01\",\"quantidadeTitulos\":57}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.647,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Time por parte do Nome"
+			},
+			{
+				"startedDateTime": "2023-03-10T21:49:16.764Z",
+				"time": 10.785,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/rest/times/orderByFundacao",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 10 Mar 2023 21:42:49 GMT"
+						}
+					],
+					"content": {
+						"size": 468,
+						"mimeType": "application/json",
+						"text": "[{\"id\":6,\"nome\":\"Real Madrid\",\"pais\":\"Espanha\",\"fundacao\":\"1902-03-06\",\"quantidadeTitulos\":120},{\"id\":4,\"nome\":\"Grêmio\",\"pais\":\"Brasil\",\"fundacao\":\"1903-09-15\",\"quantidadeTitulos\":62},{\"id\":5,\"nome\":\"Chelsea\",\"pais\":\"Inglaterra\",\"fundacao\":\"1905-03-10\",\"quantidadeTitulos\":36},{\"id\":7,\"nome\":\"Boca Juniors\",\"pais\":\"Argentina\",\"fundacao\":\"1905-04-03\",\"quantidadeTitulos\":60},{\"id\":3,\"nome\":\"Corinthians\",\"pais\":\"Brasil\",\"fundacao\":\"1910-09-01\",\"quantidadeTitulos\":57}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 10.785,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Todos os Times Por Ordem de Fundação"
+			},
+			{
+				"startedDateTime": "2023-03-10T21:49:16.764Z",
+				"time": 5.779,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/rest/times/orderByNome",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 10 Mar 2023 21:42:59 GMT"
+						}
+					],
+					"content": {
+						"size": 468,
+						"mimeType": "application/json",
+						"text": "[{\"id\":7,\"nome\":\"Boca Juniors\",\"pais\":\"Argentina\",\"fundacao\":\"1905-04-03\",\"quantidadeTitulos\":60},{\"id\":5,\"nome\":\"Chelsea\",\"pais\":\"Inglaterra\",\"fundacao\":\"1905-03-10\",\"quantidadeTitulos\":36},{\"id\":3,\"nome\":\"Corinthians\",\"pais\":\"Brasil\",\"fundacao\":\"1910-09-01\",\"quantidadeTitulos\":57},{\"id\":4,\"nome\":\"Grêmio\",\"pais\":\"Brasil\",\"fundacao\":\"1903-09-15\",\"quantidadeTitulos\":62},{\"id\":6,\"nome\":\"Real Madrid\",\"pais\":\"Espanha\",\"fundacao\":\"1902-03-06\",\"quantidadeTitulos\":120}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.779,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Todos os Times Por Ordem de Nome"
+			},
+			{
+				"startedDateTime": "2023-03-10T21:49:16.764Z",
+				"time": 6.6610000000000005,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/rest/times/orderByTitulos",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 10 Mar 2023 21:43:06 GMT"
+						}
+					],
+					"content": {
+						"size": 468,
+						"mimeType": "application/json",
+						"text": "[{\"id\":5,\"nome\":\"Chelsea\",\"pais\":\"Inglaterra\",\"fundacao\":\"1905-03-10\",\"quantidadeTitulos\":36},{\"id\":3,\"nome\":\"Corinthians\",\"pais\":\"Brasil\",\"fundacao\":\"1910-09-01\",\"quantidadeTitulos\":57},{\"id\":7,\"nome\":\"Boca Juniors\",\"pais\":\"Argentina\",\"fundacao\":\"1905-04-03\",\"quantidadeTitulos\":60},{\"id\":4,\"nome\":\"Grêmio\",\"pais\":\"Brasil\",\"fundacao\":\"1903-09-15\",\"quantidadeTitulos\":62},{\"id\":6,\"nome\":\"Real Madrid\",\"pais\":\"Espanha\",\"fundacao\":\"1902-03-06\",\"quantidadeTitulos\":120}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 6.6610000000000005,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Buscar Todos os Times Por Ordem de Títulos"
+			},
+			{
+				"startedDateTime": "2023-03-10T21:49:16.764Z",
+				"time": 5.412,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:8080/rest/times/9",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "37"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 10 Mar 2023 21:46:39 GMT"
+						}
+					],
+					"content": {
+						"size": 37,
+						"mimeType": "text/plain;charset=UTF-8",
+						"text": "Time com o Id 9 excluído com sucesso"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.412,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Deletar Time pelo Id"
+			},
+			{
+				"startedDateTime": "2023-03-10T21:49:16.764Z",
+				"time": 6.958,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/rest/times/edit?id=3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"nome\": \"Corinthians\",\n\t\"pais\": \"Inglaterra\",\n\t\"fundacao\": \"1900-01-01\",\n\t\"quantidadeTitulos\": 10\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 10 Mar 2023 21:43:43 GMT"
+						}
+					],
+					"content": {
+						"size": 96,
+						"mimeType": "application/json",
+						"text": "{\"id\":3,\"nome\":\"Corinthians\",\"pais\":\"Inglaterra\",\"fundacao\":\"1900-01-01\",\"quantidadeTitulos\":10}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 6.958,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Editar Time"
+			}
+		]
+	}
+}

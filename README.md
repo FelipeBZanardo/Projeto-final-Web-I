@@ -8,7 +8,7 @@ Toda aplicação foi desenvolvida através dos conceitos de Spring e Spring Boot
 ## 🚀 Começando
 
 Para iniciar o projeto, basta clonar ou fazer o download do repositório, abrir na sua IDE favorita e dar o play na aplicação.
-Após, basta abrir o navegador e acessar a seguinte url: <http://localhost:8080/times
+Após, basta abrir o navegador e acessar a seguinte url: <http://localhost:8080/times>
 
 ### :computer: Páginas do projeto:
 
@@ -19,13 +19,13 @@ Após, basta abrir o navegador e acessar a seguinte url: <http://localhost:8080/
 
 
 #### Página inicial:
-          ![Alt ou título da imagem](URL da imagem)
+![Tela inicial](https://github.com/FelipeBZanardo/Projeto-final-Web-I/blob/master/projeto-web-i%20-%20thymeleaf/src/main/resources/static/tela_home.png)
           
 #### Página "Cadastrar Time":
-          ![Alt ou título da imagem](URL da imagem)
+![Tela Cadastrar](https://github.com/FelipeBZanardo/Projeto-final-Web-I/blob/master/projeto-web-i%20-%20thymeleaf/src/main/resources/static/tela_cadastrar.png)
           
 #### Página "Listar Times":
-          ![Alt ou título da imagem](URL da imagem)
+![Alt ou título da imagem](https://github.com/FelipeBZanardo/Projeto-final-Web-I/blob/master/projeto-web-i%20-%20thymeleaf/src/main/resources/static/tela_listar.png)
          
 
 ## 📋 Dependências Spring Boot

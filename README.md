@@ -8,9 +8,27 @@ Toda aplicação foi desenvolvida através dos conceitos de Spring e Spring Boot
 ## 🚀 Começando
 
 Para iniciar o projeto, basta clonar ou fazer o download do repositório, abrir na sua IDE favorita e dar o play na aplicação.
-Após, basta abrir o navegador e acessar a seguinte url: <http://localhost:8080/times/>
+Após, basta abrir o navegador e acessar a seguinte url: <http://localhost:8080/times
 
-### 📋 Dependências Spring Boot
+### :computer: Páginas do projeto:
+
+**Para navegar entre as páginas, basta utilizar o menu de opções no topo da tela:**
+- **"Times de Futebol: "** mostra a página inicial
+- **"Listar Times: "** mostra a página com todos os times cadastrados listados
+- **"Cadastrar Time: "** mostra a página de cadastro
+
+
+#### Página inicial:
+          ![Alt ou título da imagem](URL da imagem)
+          
+#### Página "Cadastrar Time":
+          ![Alt ou título da imagem](URL da imagem)
+          
+#### Página "Listar Times":
+          ![Alt ou título da imagem](URL da imagem)
+         
+
+## 📋 Dependências Spring Boot
 
 #### Thymeleaf
 ```

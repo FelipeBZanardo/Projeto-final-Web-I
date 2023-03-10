@@ -123,7 +123,7 @@ public class TimeController {
         return "redirect:all";
     }
 
-    @GetMapping("/control/{id}")
+    @GetMapping("/cadastrar-editar/{id}")
     public String controlar(@PathVariable Long id, Model model){
         if(id == 0){
             model.addAttribute("time", new Time());

@@ -43,7 +43,7 @@
         <td th:text="${{time.fundacao}}"></td>
         <td th:text="${{time.quantidadeTitulos}}"></td>
         <td>
-          <form th:action="@{/times/control/{id}(id=${time.id})}" th:method="get">
+          <form th:action="@{/times/cadastrar-editar/{id}(id=${time.id})}" th:method="get">
             <button type="submit" class="btn btn-primary edit">Editar</button>
           </form>
         </td>

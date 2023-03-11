@@ -19,6 +19,8 @@ public class TimeService {
         String campoVazio = fieldEmpty(time);
         if(campoVazio != null)
             throw new RuntimeException("Não deixe o campo " + campoVazio + " em branco");
+        if(timeDuplicado(time))
+            throw new RuntimeException("Esse time já existe cadastrado");
         return timeRepository.save(time);
     }
 
@@ -32,6 +34,15 @@ public class TimeService {
         if(time.getQuantidadeTitulos() == null)
             return "Quantidade de Títulos";
         return null;
+    }
+
+    private Boolean timeDuplicado(Time time){
+        try{
+            return findAll().stream()
+                    .anyMatch(t -> t.equals(time));
+        }catch (RuntimeException e){
+            return false;
+        }
     }
 
     public List<Time> findAll() throws RuntimeException{

@@ -29,6 +29,7 @@ public class TimeController {
             model.addAttribute("time", time);
             model.addAttribute("campoVazio", true);
             model.addAttribute("cadastrar", true);
+            model.addAttribute("mensagem", e.getMessage());
             return "criar_time";
         }
         return "redirect:all";
@@ -118,6 +119,7 @@ public class TimeController {
         model.addAttribute("time", time);
         model.addAttribute("campoVazio", true);
         model.addAttribute("cadastrar", false);
+            model.addAttribute("mensagem", e.getMessage());
         return "criar_time";
     }
         return "redirect:all";

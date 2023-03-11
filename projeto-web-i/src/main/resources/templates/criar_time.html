@@ -31,8 +31,11 @@
     <input type="number" class="form-control" id="quantidadeTitulos" name="quantidadeTitulos" th:field="*{quantidadeTitulos}"/>
     <small th:if="${campoVazio}" th:classappend="${#strings.isEmpty(time.quantidadeTitulos)} ? 'form-text text-danger' : 'd-none'">Não deixe em branco.</small>
   </div>
+  <div>
     <button th:text="${cadastrar} ? 'Criar' : 'Editar'" type="submit" class="btn btn-success"/>
+    <a href="/times/all" class="btn btn-secondary">Cancelar</a>
   </div>
+  <div th:if="${mensagem != null}" th:text="${mensagem}" class="alert alert-danger" role="alert"/>
 </form>
 </body>
 <footer th:include="footer"></footer>

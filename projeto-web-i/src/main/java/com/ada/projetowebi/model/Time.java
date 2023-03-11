@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 @Entity
 public class Time {
@@ -60,5 +61,16 @@ public class Time {
         this.quantidadeTitulos = quantidadeTitulos;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Time time = (Time) o;
+        return Objects.equals(nome, time.nome) && Objects.equals(pais, time.pais) && Objects.equals(fundacao, time.fundacao) && Objects.equals(quantidadeTitulos, time.quantidadeTitulos);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, pais, fundacao, quantidadeTitulos);
+    }
 }
